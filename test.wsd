@@ -1,0 +1,18 @@
+@startuml
+|User|
+
+|Sistem|
+start
+:Halaman Menu Admin;
+
+|User|
+:Select menu kelola;
+
+|Sistem|
+:Menampilkan Import Data Siswa;
+
+
+|User|
+:Select Import Data Siswa;
+stop
+@enduml
