@@ -44,13 +44,14 @@
 			defaultDate: '<?= date("Y-m-d") ?>',
 			locale: 'id',
 			eventLimit: true,
-			events: [
+			events: [{
+
 				<?php foreach ($row as $r => $data) : ?>
 					title: '<?= $data->perihal_acara ?>',
 					start: '<?= $data->tgl_start ?> <?= $data->jam_start ?>',
-					end: '<?= $data->tgl_end ?> <?= $data->jam_end ?>'
+					end: '<?= $data->tgl_end ?> <?= $data->jam_end ?>',
 				<?php endforeach; ?>
-			]
+			}]
 		});
 
 	}
